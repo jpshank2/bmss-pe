@@ -1,0 +1,61 @@
+/*Need to update for mobile view*/
+
+#navigation {
+    display: block;
+    background-color: rgb(0, 61, 76);
+    color: white;
+    padding: 10px 5px 10px 5px;
+}
+
+.nav {
+    display: inline;
+    padding: 5px 25px 5px 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav-text:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(108, 194, 74);
+}
+
+.plus {
+    color: rgb(108, 194, 74);
+}
+
+.nav-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    font-weight: normal;
+}
+
+.user {
+    padding-left: 25px;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.dash {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.dashcard {
+    width: 375px;
+    height: 400px;
+    padding: 0px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 1px solid rgb(0, 61, 76);
+    border-radius: 2%;
+}
+
+.dashtitle {
+    font-size: 1em;
+    color: white;
+    background-color: rgb(0, 61, 76);
+    padding: 5px 5px 5px 15px;
+}
