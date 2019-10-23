@@ -2,9 +2,17 @@
 
 #navigation {
     display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: rgb(0, 61, 76);
     color: white;
     padding: 10px 5px 10px 5px;
+    z-index: 2;
+}
+
+#navigation > span:hover {
+    cursor: pointer;
 }
 
 .nav {
@@ -58,4 +66,13 @@
     color: white;
     background-color: rgb(0, 61, 76);
     padding: 5px 5px 5px 15px;
+}
+
+.dropdown-menu {
+    border-top: 1px solid rgb(115, 115, 115);
+    list-style: none;
+    padding: 10px;
+    width: 250px;
+    color: rgb(0, 61, 76);
+    background-color: white;
 }

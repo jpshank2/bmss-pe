@@ -1,8 +1,10 @@
+// Look at ReachRouter for setting pages rather than using state
+
 import React, { Component } from 'react';
 import "./style.css";
-import { Navigation } from './navigation';
-import { Dashboard } from "./Dashboard";
-import { Entry } from "./entry";
+import { Navigation } from './Components/navigation';
+import { Dashboard } from "./Components/Pages/Dashboard";
+import { Entry } from "./Components/Pages/entry";
 
 class App extends Component {
   constructor(props) {
@@ -15,7 +17,7 @@ class App extends Component {
   }
 
   handler = (e) => {
-    switch (e.target.id) { //change this to reflect new ids in navigation.js
+    switch (e.target.id) { //Remove all aspects unless it can be used to toggle dropdown
       case "entry":
         this.setState({dashboard: false, entry: true});
         break;
