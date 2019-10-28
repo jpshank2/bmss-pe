@@ -22,21 +22,23 @@ export class Reports extends Component {
     render() {
         return (
             <React.Fragment>
-                <span onClick={this.dropdown}>
-                    <i className="fa fa-list-alt nav">
-                        <span onClick={this.dropdown} className="nav-text">Reports</span>
-                        <span className="plus">+</span>
-                    </i>
-                </span>
-                <ul style={{display: this.state.display}}>
-                    <div className="dropdown-menu">
-                        <li>View Reports</li>
-                    </div>
-                    <div className="dropdown-menu">
-                        <li>Task Pad</li>
-                        <li>Manage Menu</li>
-                    </div>
-                </ul>
+                <div className="menu-heading">
+                    <span className="menu-heading" onClick={this.dropdown}>
+                        <i className="fa fa-list-alt nav">
+                            <span onClick={this.dropdown} className="nav-text">Reports</span>
+                            <span className="plus">+</span>
+                        </i>
+                    </span>
+                    <ul className="menu-drop" style={{display: this.state.display}}>
+                        <div className="dropdown-menu">
+                            <li>View Reports</li>
+                        </div>
+                        <div className="dropdown-menu">
+                            <li>Task Pad</li>
+                            <li>Manage Menu</li>
+                        </div>
+                    </ul>
+                </div>
             </React.Fragment>
         )
     }

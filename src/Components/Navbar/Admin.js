@@ -22,18 +22,20 @@ export class Admin extends Component {
     render() {
         return (
             <React.Fragment>
-                <span onClick={this.dropdown}>
-                    <i className="fas fa-wrench nav">
-                        <span className="nav-text">Admin</span>
-                        <span className="plus">+</span>
-                    </i>
-                </span>
-                <ul style={{display: this.state.display}}>
-                    <div className="dropdown-menu">
-                        <li>Task Pad</li>
-                        <li>Manage Menu</li>
-                    </div>
-                </ul>
+                <div className="menu-heading">
+                    <span onClick={this.dropdown}>
+                        <i className="fas fa-wrench nav">
+                            <span className="nav-text">Admin</span>
+                            <span className="plus">+</span>
+                        </i>
+                    </span>
+                    <ul className="menu-drop" style={{display: this.state.display}}>
+                        <div className="dropdown-menu">
+                            <li>Task Pad</li>
+                            <li>Manage Menu</li>
+                        </div>
+                    </ul>
+                </div>
             </React.Fragment>
         )
     }

@@ -76,3 +76,14 @@
     color: rgb(0, 61, 76);
     background-color: white;
 }
+
+.menu-heading {
+    position: relative;
+    display: inline;
+}
+
+.menu-drop {
+    position: absolute;
+    box-shadow: 3px 3px 10px rgb(100, 100, 100);
+    padding: 0;
+}

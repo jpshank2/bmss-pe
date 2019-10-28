@@ -22,29 +22,30 @@ export class Staff extends Component {
     render() {
         return (
             <React.Fragment>
-                <span onClick={this.dropdown}>
-                    <i className="far fa-user nav">
-                        <span className="nav-text">Staff</span>
-                        <span className="plus">+</span>
-                    </i>
-                </span>
-                <ul style={{display: this.state.display}}>
-                    <div className="dropdown-menu">
-                        <li>Search</li>
-                        <li>Reports</li>
-                    </div>
-                    <div className="dropdown-menu">
-                        <li>All Staff Details</li>
-                        <li>Global Std Job Management</li>
-                        <li>Global Tax Job Management</li>
-                        <li>Staff Jobs</li>
-                    </div>
-                    <div className="dropdown-menu">
-                        <li>Task Pad</li>
-                        <li>Manage Menu</li>
-                    </div>
-                    
-                </ul>
+                <div className="menu-heading">
+                    <span onClick={this.dropdown}>
+                        <i className="far fa-user nav">
+                            <span className="nav-text">Staff</span>
+                            <span className="plus">+</span>
+                        </i>
+                    </span>
+                    <ul className="menu-drop" style={{display: this.state.display}}>
+                        <div className="dropdown-menu">
+                            <li>Search</li>
+                            <li>Reports</li>
+                        </div>
+                        <div className="dropdown-menu">
+                            <li>All Staff Details</li>
+                            <li>Global Std Job Management</li>
+                            <li>Global Tax Job Management</li>
+                            <li>Staff Jobs</li>
+                        </div>
+                        <div className="dropdown-menu">
+                            <li>Task Pad</li>
+                            <li>Manage Menu</li>
+                        </div>
+                    </ul>
+                </div>
             </React.Fragment>
         )
     }

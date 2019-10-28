@@ -22,22 +22,24 @@ export class ClientTakeOn extends Component {
     render() {
         return (
             <React.Fragment>
-                <span onClick={this.dropdown}>
-                    <i className="fas fa-plus-circle nav">
-                        <span onClick={this.dropdown} className="nav-text">Client Take On</span>
-                        <span className="plus">+</span>
-                    </i>
-                </span>
-                <ul style={{display: this.state.display}}>
-                    <div className="dropdown-menu">
-                        <li>My Assurance Requests</li>
-                        <li>New Contact/Client</li>
-                    </div>
-                    <div className="dropdown-menu">
-                        <li>Task Pad</li>
-                        <li>Manage Menu</li>
-                    </div>
-                </ul>
+                <div className="menu-heading">
+                    <span className="menu-heading" onClick={this.dropdown}>
+                        <i className="fas fa-plus-circle nav">
+                            <span onClick={this.dropdown} className="nav-text">Client Take On</span>
+                            <span className="plus">+</span>
+                        </i>
+                    </span>
+                    <ul className="menu-drop" style={{display: this.state.display}}>
+                        <div className="dropdown-menu">
+                            <li>My Assurance Requests</li>
+                            <li>New Contact/Client</li>
+                        </div>
+                        <div className="dropdown-menu">
+                            <li>Task Pad</li>
+                            <li>Manage Menu</li>
+                        </div>
+                    </ul>
+                </div>
             </React.Fragment>
         )
     }
